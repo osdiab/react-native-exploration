@@ -1,3 +1,7 @@
+# Custom ignores
+#
+build/
+
 # OSX
 #
 .DS_Store
