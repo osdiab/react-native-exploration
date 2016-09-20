@@ -1,5 +1,15 @@
 # Getting started with React Native
 
+## Running the app
+
+1. Setup your React Native environment. See the Mac Setup Notes (no other OS supported yet)
+1. Clone repo
+1. `npm install`
+1. `tsc`
+1. `react-native run-ios`
+
+TODO: actually have it watch on changes. Maybe use `webpack` for this.
+
 ## Mac setup notes
 
 * [Cannot run virtualbox machine at same time as Android emulator](https://www.virtualbox.org/ticket/14294)
