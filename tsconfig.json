@@ -1,12 +1,16 @@
 {
     "compilerOptions": {
-        "module": "es6",
+        "lib": [
+            "es5",
+            "es6",
+            "dom"
+        ],
+        "moduleResolution": "node",
         "target": "es6",
         "jsx": "react",
         "outDir": "build",
-        "rootDir": "src",
-        "noImplicitAny": false,
-        "sourceMap": false
+        "strictNullChecks": true,
+        "noImplicitAny": true
     },
     "filesGlob": [
         "src/**/*.ts",
