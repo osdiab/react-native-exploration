@@ -5,7 +5,7 @@
 1. Setup your React Native environment. See the Mac Setup Notes (no other OS supported yet)
 1. Clone repo
 1. `npm install`
-1. `tsc`
+1. `npm run-script build`: This runs the Typescript compiler.
 1. `react-native run-ios`
 
 TODO: actually have it watch on changes. Maybe use `webpack` for this.
