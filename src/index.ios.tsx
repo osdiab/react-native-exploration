@@ -3,29 +3,21 @@
  * https://github.com/facebook/react-native
  */
 
-import * as React from 'react';
+import * as React from "react";
 import {
   StyleSheet,
   Text,
-  View
-} from 'react-native';
+  View,
+} from "react-native";
 
-interface Props {
-  // none
+interface IStyle {
+  container: React.ViewStyle;
+  instructions: React.TextStyle;
+  welcome: React.TextStyle;
 }
 
-interface State {
-  // none
-}
-
-interface Style {
-  container: React.ViewStyle,
-  welcome: React.TextStyle,  
-  instructions: React.TextStyle,
-}
-
-export default class App extends React.Component<Props, State> {
-  render() {
+export default class App extends React.Component<{}, {}> {
+  public render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
@@ -35,7 +27,7 @@ export default class App extends React.Component<Props, State> {
           To get started, edit index.ios.js
         </Text>
         <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
+          Press Cmd+R to reload,{"\n"}
           Cmd+D or shake for dev menu
         </Text>
       </View>
@@ -43,21 +35,21 @@ export default class App extends React.Component<Props, State> {
   }
 }
 
-const styles = StyleSheet.create<Style>({
+const styles = StyleSheet.create<IStyle>({
   container: {
+    alignItems: "center",
+    backgroundColor: "#F5FCFF",
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    justifyContent: "center",
+  },
+  instructions: {
+    color: "#333333",
+    marginBottom: 5,
+    textAlign: "center",
   },
   welcome: {
     fontSize: 20,
-    textAlign: 'center',
     margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+    textAlign: "center",
   },
 });
