@@ -10,7 +10,6 @@
     "react-native": "0.33.0"
   },
   "devDependencies": {
-    "@types/es6-shim": "^0.31.32",
     "@types/react": "^0.14.35",
     "@types/react-native": "^0.29.31",
     "@types/react-redux": "^4.4.31",
